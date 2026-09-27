@@ -154,20 +154,20 @@ function loadTriangles() {
 function setupShaders() {
     
     // define fragment shader in essl using es6 template strings
-    var fShaderCode = `
+    var fShaderCode = 
         void main(void) {
-            gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0); // all fragments are white
+            gl_FragColor = vec4(182.0, 18.0, 53.0, 0.92); // all fragments are white
         }
-    `;
+    ;
     
     // define vertex shader in essl using es6 template strings
-    var vShaderCode = `
+    var vShaderCode = 
         attribute vec3 vertexPosition;
 
         void main(void) {
             gl_Position = vec4(vertexPosition, 1.0); // use the untransformed position
         }
-    `;
+    ;
     
     try {
         // console.log("fragment shader: "+fShaderCode);
